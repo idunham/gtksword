@@ -27,6 +27,7 @@
 #include <versekey.h>
 #include <stdio.h>
 #include <string>
+#include <assert.h>
 
 using std::string;
 
