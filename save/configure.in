@@ -1,0 +1,4 @@
+AC_PROG_CXX
+
+AC_LANG_CPLUSPLUS
+LIBS="$LIBS -L../../../lib -lswmgr -lkeys -lutilfuns -lmodules -lfrontend"
