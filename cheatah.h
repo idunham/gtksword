@@ -22,6 +22,24 @@
 #include <gtk/gtk.h>
 #include <swmgr.h>
 #include <swdisp.h>
+#include <swmodule.h>
+#include <encfiltmgr.h>
+#include <versekey.h>
+#include <stdio.h>
+#include <string>
+
+using std::string;
+
+using sword::SWMgr;
+using sword::SWModule;
+using sword::SWDisplay;
+using sword::SWFilter;
+using sword::ModMap;
+using sword::SectionMap;
+using sword::ConfigEntMap;
+using sword::SWKey;
+using sword::ListKey;
+using sword::VerseKey;
 
 /*
  * This function returns a widget in a component created by Glade.
