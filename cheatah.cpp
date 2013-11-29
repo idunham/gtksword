@@ -403,10 +403,12 @@ void MainWindow::initSWORD() {
 	char *font;
 	SWModule *curMod;
 
-/*	First, check and see whether SWMgr found any installed books.  If not, tell the user what the problem is.	*/
-/*	Print a short notice to stderr, for use when the program is invoked from the command line,		*/
-/*	and also put  a bit longer message into the spot where bible text would otherwise show up. 		*/
-/*	Then, return out of this function, because there's nothing left to do.					*/
+/*
+* First, check and see whether SWMgr found any installed books.  If not, tell the user what the problem is.
+* Print a short notice to stderr, for use when the program is invoked from the command line,
+* and also put  a bit longer message into the spot where bible text would otherwise show up.
+* Then, return out of this function, because there's nothing left to do.
+*/
 
 	if (mainMgr->Modules.empty()==TRUE) {
 		fprintf(stderr,"SWMgr: Can't find 'mods.conf' or 'mods.d'.  Try setting:\n\tSWORD_PATH=<directory containing mods.conf>\n\tOr see the README file for a full description of setup options.\n\t");
